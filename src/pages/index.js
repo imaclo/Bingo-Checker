@@ -128,7 +128,7 @@ export default function Home() {
 
   // this will get the check results and let us do something with the result
   function handleBingoCheck() {
-    const hasBingo = numbers(numbers, card);
+    const hasBingo = checkForBingo(numbers, card);
 
     if (hasBingo) {
       setModalTitle("Congratulations!");
@@ -145,9 +145,9 @@ export default function Home() {
 
   // this will check the three cards if theu will get bingo
   function checkThree() {
-    const hasBingoA = checkBingo(numbers, cardA);
-    const hasBingoB = checkBingo(numbers, cardB);
-    const hasBingoC = checkBingo(numbers, cardC);
+    const hasBingoA = checkForBingo(numbers, cardA);
+    const hasBingoB = checkForBingo(numbers, cardB);
+    const hasBingoC = checkForBingo(numbers, cardC);
 
     setModalText("");
 
