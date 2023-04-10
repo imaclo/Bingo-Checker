@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-size: 5rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+  a {
+    color: red;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px green;
+    }
+    to {
+      text-shadow: 0 0 30px yellow, 0 0 10px purple;
+    }
+  }
+
+
+
+  
